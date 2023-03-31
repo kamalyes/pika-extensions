@@ -1,0 +1,144 @@
+[
+  {
+    "index": 0,
+    "name": "App通用-省市区相关接口",
+    "desc": "工具上传临时文件夹",
+    "add_time": 1651481827,
+    "up_time": 1651481827,
+    "list": [
+      {
+        "query_path": {
+          "path": "/member/area/province",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 163,
+        "req_query": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "623941a9d0e4bc10bdd20d0e",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "title": "注册页面 - 查询省列表",
+        "catid": 29,
+        "req_body_type": "json",
+        "path": "/member/area/province",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"title\": \"Wrapper\\u003cList\\u003cCountryAreaCodeNameVO\\u003e\\u003e\",\n  \"required\": [],\n  \"description\": \"Wrapper\\u003cList\\u003cCountryAreaCodeNameVO\\u003e\\u003e :Wrapper\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"number\",\n      \"description\": \"状态码\",\n      \"mock\": {\n        \"mock\": \"@integer\"\n      }\n    },\n    \"message\": {\n      \"type\": \"string\",\n      \"description\": \"提示信息\",\n      \"mock\": {\n        \"mock\": \"@string\"\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"description\": \"响应数据 ,CountryAreaCodeNameVO\",\n      \"items\": {\n        \"type\": \"object\",\n        \"description\": \"响应数据 ,CountryAreaCodeNameVO\",\n        \"properties\": {\n          \"code\": {\n            \"type\": \"string\",\n            \"description\": \"区域编码\",\n            \"mock\": {\n              \"mock\": \"@string\"\n            }\n          },\n          \"name\": {\n            \"type\": \"string\",\n            \"description\": \"区域名称\",\n            \"mock\": {\n              \"mock\": \"@string\"\n            }\n          }\n        },\n        \"required\": []\n      }\n    },\n    \"time\": {\n      \"type\": \"number\",\n      \"description\": \"响应时间戳\",\n      \"mock\": {\n        \"mock\": \"@integer\"\n      }\n    }\n  }\n}",
+        "desc": " <pre><code>  /**\n     * 注册页面 - 查询省列表\n     * @return 查询结果\n     */\n    @RequestMapping(value = \"/province\", method = RequestMethod.GET)\n    public Wrapper&lt;List&lt;CountryAreaCodeNameVO&gt;&gt; listProvince() </code></pre>",
+        "method": "GET",
+        "req_params": [],
+        "project_id": 29,
+        "req_body_form": [],
+        "uid": 11,
+        "add_time": 1651481828,
+        "up_time": 1651481828,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/member/area/district",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 172,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "623941aad0e4bc10bdd20d11",
+            "desc": "",
+            "example": "String",
+            "name": "code"
+          }
+        ],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "623941aad0e4bc10bdd20d12",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "title": "注册页面 - 根据市编码,查询区列表",
+        "catid": 29,
+        "req_body_type": "json",
+        "path": "/member/area/district",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"title\": \"Wrapper\\u003cList\\u003cCountryAreaCodeNameVO\\u003e\\u003e\",\n  \"required\": [],\n  \"description\": \"Wrapper\\u003cList\\u003cCountryAreaCodeNameVO\\u003e\\u003e :Wrapper\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"number\",\n      \"description\": \"状态码\",\n      \"mock\": {\n        \"mock\": \"@integer\"\n      }\n    },\n    \"message\": {\n      \"type\": \"string\",\n      \"description\": \"提示信息\",\n      \"mock\": {\n        \"mock\": \"@string\"\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"description\": \"响应数据 ,CountryAreaCodeNameVO\",\n      \"items\": {\n        \"type\": \"object\",\n        \"description\": \"响应数据 ,CountryAreaCodeNameVO\",\n        \"properties\": {\n          \"code\": {\n            \"type\": \"string\",\n            \"description\": \"区域编码\",\n            \"mock\": {\n              \"mock\": \"@string\"\n            }\n          },\n          \"name\": {\n            \"type\": \"string\",\n            \"description\": \"区域名称\",\n            \"mock\": {\n              \"mock\": \"@string\"\n            }\n          }\n        },\n        \"required\": []\n      }\n    },\n    \"time\": {\n      \"type\": \"number\",\n      \"description\": \"响应时间戳\",\n      \"mock\": {\n        \"mock\": \"@integer\"\n      }\n    }\n  }\n}",
+        "desc": " <pre><code>  /**\n     * 注册页面 - 根据市编码,查询区列表\n     * @param codeVO 接口参数\n     * @return 查询结果\n     */\n    @RequestMapping(value = \"/district\", method = RequestMethod.GET)\n    public Wrapper&lt;List&lt;CountryAreaCodeNameVO&gt;&gt; listDistrictsByCityCode(@Valid CountryAreaCodeVO codeVO) </code></pre>",
+        "method": "GET",
+        "req_params": [],
+        "project_id": 29,
+        "req_body_form": [],
+        "uid": 11,
+        "add_time": 1651481828,
+        "up_time": 1651481828,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/member/area/city",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [],
+        "_id": 181,
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "623941aad0e4bc10bdd20d0f",
+            "desc": "",
+            "example": "String",
+            "name": "code"
+          }
+        ],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "623941aad0e4bc10bdd20d10",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "title": "注册页面 - 根据省编码,查询市列表",
+        "catid": 29,
+        "req_body_type": "json",
+        "path": "/member/area/city",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"title\": \"Wrapper\\u003cList\\u003cCountryAreaCodeNameVO\\u003e\\u003e\",\n  \"required\": [],\n  \"description\": \"Wrapper\\u003cList\\u003cCountryAreaCodeNameVO\\u003e\\u003e :Wrapper\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"number\",\n      \"description\": \"状态码\",\n      \"mock\": {\n        \"mock\": \"@integer\"\n      }\n    },\n    \"message\": {\n      \"type\": \"string\",\n      \"description\": \"提示信息\",\n      \"mock\": {\n        \"mock\": \"@string\"\n      }\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"description\": \"响应数据 ,CountryAreaCodeNameVO\",\n      \"items\": {\n        \"type\": \"object\",\n        \"description\": \"响应数据 ,CountryAreaCodeNameVO\",\n        \"properties\": {\n          \"code\": {\n            \"type\": \"string\",\n            \"description\": \"区域编码\",\n            \"mock\": {\n              \"mock\": \"@string\"\n            }\n          },\n          \"name\": {\n            \"type\": \"string\",\n            \"description\": \"区域名称\",\n            \"mock\": {\n              \"mock\": \"@string\"\n            }\n          }\n        },\n        \"required\": []\n      }\n    },\n    \"time\": {\n      \"type\": \"number\",\n      \"description\": \"响应时间戳\",\n      \"mock\": {\n        \"mock\": \"@integer\"\n      }\n    }\n  }\n}",
+        "desc": " <pre><code>  /**\n     * 注册页面 - 根据省编码,查询市列表\n     * @param codeVO 接口参数\n     * @return 查询结果\n     */\n    @RequestMapping(value = \"/city\", method = RequestMethod.GET)\n    public Wrapper&lt;List&lt;CountryAreaCodeNameVO&gt;&gt; listCitiesByProvinceCode(@Valid CountryAreaCodeVO codeVO) </code></pre>",
+        "method": "GET",
+        "req_params": [],
+        "project_id": 29,
+        "req_body_form": [],
+        "uid": 11,
+        "add_time": 1651481828,
+        "up_time": 1651481828,
+        "__v": 0
+      }
+    ]
+  }
+ ]

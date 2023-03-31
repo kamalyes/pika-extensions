@@ -1,0 +1,5 @@
+{
+  "title": "Export apiData",
+  "description": "Export the apiData JSON file",
+  "function.description":"Export apiData as a OpenAPI JSON file"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Import OpenAPI",
+  "description": "Import the OpenAPI JSON file",
+  "function.description":"Import Swagger OpenAPI v3.0"
+}

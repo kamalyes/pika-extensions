@@ -1,0 +1,5 @@
+{
+  "title": "Export PikaAPI",
+  "description": "Export the PikaAPI JSON file",
+  "function.description": "Export PikaAPI as a Pika JSON file"
+}

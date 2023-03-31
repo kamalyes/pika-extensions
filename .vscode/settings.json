@@ -1,0 +1,119 @@
+{
+  "editor.fontSize": 18,
+  "editor.links": false,
+  "editor.tabSize": 2,
+  "prettier.endOfLine": "auto",
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 代码默认使用prettier格式化
+  "eslint.validate": ["javascript", "vue", "html", "typescript", "typescriptreact"], //  用eslint的规则检测js文件
+  "editor.codeActionsOnSave": {
+    // eslint
+    "source.fixAll.eslint": true,
+    "source.fixAll": false
+  },
+  "window.zoomLevel": 0.1, // 窗口大小,字体大小等
+  "files.autoSave": "off",
+  /* "editor.formatOnSave": true,
+  "editor.formatOnPaste": true, */
+  "editor.formatOnType": true,
+  "editor.suggestSelection": "first",
+  "editor.detectIndentation": false,
+  "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "workbench.startupEditor": "none",
+  "explorer.confirmDelete": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "terminal.integrated.fontSize": 16,
+  "editor.guides.bracketPairs": true,
+  "search.followSymlinks": false, //控制是否在搜索中跟踪符号链接。
+  "files.exclude": {
+    // 不需要扫描的文件夹
+    // "**/node_modules": true,
+    // "**/.umi": true,
+    // "**/public": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  /*以下为代码格式化配置*/
+  "[javascript]": {
+    // js 相关操作
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // 代码默认使用prettier格式化
+  },
+  "[vue]": {
+    // vue 相关操作
+    "editor.formatOnSave": true, // 保存时格式化
+    "editor.formatOnPaste": true // 粘贴时格式化
+  },
+  "[typescript]": {
+    // ts 相关操作
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true, // 保存时格式化
+    "editor.formatOnPaste": true
+  },
+  "[javascriptreact]": {
+    // react ts 相关操作
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true, // 保存时格式化
+    "editor.formatOnPaste": false // 粘贴时格式化
+  },
+  "[typescriptreact]": {
+    // react ts 相关操作
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true, // 保存时格式化
+    "editor.formatOnPaste": false // 粘贴时格式化
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+
+  /*以下为git&文件头配置*/
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "python": true,
+    "java": false
+  },
+  "git.confirmSync": false,
+  "fileheader.LastModifiedBy": "YuYanQing",
+  "fileheader.Author": "YuYanQing",
+  "git.autofetch": true,
+  "git.autorefresh": false, // git 更新,
+  "git.detectSubmodules": false, // git 检测模块
+  "search.exclude": {
+    // 不需要搜索的文件夹
+    "**/.idea": true
+  },
+  /*其它配置*/
+  "cSpell.userWords": ["antlr", "kamalyes"],
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "typescript.updateImportsOnFileMove.enabled": "always", // ts 文件移动时更新导入
+  "javascript.updateImportsOnFileMove.enabled": "always", // js 文件移动时更新导入
+  "git.enableSmartCommit": true,
+  "cSpell.words": [
+    "Apifox",
+    "APIV",
+    "Datas",
+    "datetime",
+    "eolink",
+    "formdata",
+    "GetpostMan",
+    "openapi",
+    "protocal",
+    "urlencode",
+    "yapi"
+  ], // 启用智能提交
+  // "pasteImage.path": "${currentFileDir}/assets/images",
+  // "pasteImage.basePath": "${currentFileDir}",
+  // "pasteImage.prefix": "../"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Import PikaAPI",
+  "description": "Import the PikaAPI JSON file",
+  "function.description": "Import PikaAPI from Pika."
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Import Eolink",
+  "description": "Import the Eolink JSON file",
+  "function.description": "Import API from eolink."
+}

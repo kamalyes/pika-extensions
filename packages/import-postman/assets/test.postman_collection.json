@@ -1,0 +1,431 @@
+{
+  "info": {
+    "_postman_id": "e67b0915-b4ea-c3e4-9d22-41d5d62a26ec",
+    "name": "插件测试专用",
+    "schema": "https://schema.GetpostMan.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1132101"
+  },
+  "item": [
+    {
+      "name": "one",
+      "item": [
+        {
+          "name": "one2",
+          "item": []
+        },
+        {
+          "name": "dd",
+          "item": [
+            {
+              "name": "four",
+              "item": [
+                {
+                  "name": "five",
+                  "item": [
+                    {
+                      "name": "six",
+                      "item": [
+                        {
+                          "name": "seven",
+                          "item": [
+                            {
+                              "name": "eight",
+                              "item": [
+                                {
+                                  "name": "9",
+                                  "item": [
+                                    {
+                                      "name": "10",
+                                      "item": [
+                                        {
+                                          "name": "11",
+                                          "item": [
+                                            {
+                                              "name": "12",
+                                              "item": [
+                                                {
+                                                  "name": "13",
+                                                  "item": [
+                                                    {
+                                                      "name": "14",
+                                                      "item": [
+                                                        {
+                                                          "name": "15",
+                                                          "item": [
+                                                            {
+                                                              "name": "16",
+                                                              "item": [
+                                                                {
+                                                                  "name": "17",
+                                                                  "item": [
+                                                                    {
+                                                                      "name": "18",
+                                                                      "item": [
+                                                                        {
+                                                                          "name": "19",
+                                                                          "item": [
+                                                                            {
+                                                                              "name": "20",
+                                                                              "item": [
+                                                                                {
+                                                                                  "name": "21",
+                                                                                  "item": [
+                                                                                    {
+                                                                                      "name": "22",
+                                                                                      "item": [
+                                                                                        {
+                                                                                          "name": "23",
+                                                                                          "item": [
+                                                                                            {
+                                                                                              "name": "24",
+                                                                                              "item": [
+                                                                                                {
+                                                                                                  "name": "25",
+                                                                                                  "item": [
+                                                                                                    {
+                                                                                                      "name": "26",
+                                                                                                      "item": []
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "two1",
+          "item": []
+        },
+        {
+          "name": "two",
+          "item": [
+            {
+              "name": "three",
+              "item": []
+            }
+          ]
+        },
+        {
+          "name": "本地测试",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "test",
+                "value": "123456"
+              }
+            ],
+            "body": {
+              "mode": "file",
+              "file": {
+                "src": ""
+              }
+            },
+            "url": {
+              "raw": "http://apistore.data.eolinker.com/icon_holiday.png",
+              "protocol": "http",
+              "host": ["apistore", "data", "eolinker", "com"],
+              "path": ["icon_holiday.png"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "one1",
+      "item": []
+    },
+    {
+      "name": "全局变量",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/{{dashboard}}/",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["{{dashboard}}", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put请求",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "projectID",
+              "value": "9",
+              "type": "text"
+            },
+            {
+              "key": "apiID",
+              "value": "161078",
+              "type": "text"
+            },
+            {
+              "key": "fdsf",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://115.28.150.157:8081/authc",
+          "protocol": "http",
+          "host": ["115", "28", "150", "157"],
+          "port": "8081",
+          "path": ["authc"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "本地文件测试",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;\r",
+              "tests[\"Body matches string\"] = responseBody.has(\"百度一下\");"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": []
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:8080/file.php",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["file.php"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Form-data格式",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Test",
+            "value": "test"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "cookie",
+            "value": "123456fdfsfsfs"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "eolinker",
+              "value": "eolinker",
+              "type": "text"
+            },
+            {
+              "key": "eolnker1",
+              "value": "eolinker2",
+              "type": "text"
+            },
+            {
+              "key": "file",
+              "type": "file",
+              "src": []
+            }
+          ]
+        },
+        "url": {
+          "raw": "www.eolinker.com?get=get",
+          "host": ["www", "eolinker", "com"],
+          "query": [
+            {
+              "key": "get",
+              "value": "get"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://demo.gokuapi.com:8280/Web/Test/all/print?test={{envKey}}",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "pm.environment.set(\"envKey\", \"envKeyForm\");",
+              "pm.globals.get(\"variable_key\");",
+              "pm.collectionVariables.get(\"variable_key\");",
+              "pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
+              "    console.log(response.json());",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Your test name\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.value).to.eql(100);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "{{envKey",
+              "value": "",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://demo.gokuapi.com:8280/Web/Test/all/print?test={{envKey}}",
+          "protocol": "http",
+          "host": ["demo", "gokuapi", "com"],
+          "port": "8280",
+          "path": ["Web", "Test", "all", "print"],
+          "query": [
+            {
+              "key": "test",
+              "value": "{{envKey}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "raw测试",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": ["postman.clearGlobalVariable(\"hello\");"]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "cookie",
+            "value": "123456"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\"i am raw\""
+        },
+        "url": {
+          "raw": "www.baidu.com",
+          "host": ["www", "baidu", "com"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "test",
+          "host": ["test"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
